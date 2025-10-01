@@ -23,7 +23,7 @@
 
 /*Inverter color logo*/
 html[data-theme='light'] .logo{
-filter: invert(1    );
+filter: invert(1);
 
 }
 
@@ -33,6 +33,7 @@ filter: invert(1    );
 *{
 margin: 0%;
 padding: 0%;
+box-sizing: border-box;
 
 
 }
@@ -166,24 +167,68 @@ height: 5.70rem ; /*altura*/
 display: flex; 
 justify-content: flex-end;
 align-items: center;
+}  
 
+#home {
+    padding: 6.5rem 1rem; 
+    display: flex;
+    flex-direction: column;
 
+}
+
+h1 {
+font-size: 2.5rem;
 
 
 }
 
 
+
+.main-content {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
 /* Medidas Responsivas */
 @media (min-width: 768px) {
 
     .menu-desktop {
         display: flex;
-        min-width: 30%;
+        min-width: 30%; /*Alinhar logo*/
     }
+
+    .header {  padding: 9rem 6rem;
+    
+}
+
+h1 {
+
+    font: 3rem;
+ }
+
+ #home{
+    padding: 8re 6rem 4rem 6rem ;
+ }  
+
+ .main-content{ 
+
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+ }
     .btn-menu-mobile {
         display: none;
     }
     .header-toggle {
         min-width: 30%;
     }
-}
+}/*FIM min 768px*/
+
+@media (min-width: 1400px )  {
+
+ h1 { 
+
+    font-size: 3rem ;
+ }
+ }
