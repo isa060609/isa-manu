@@ -173,16 +173,51 @@ align-items: center;
     padding: 6.5rem 1rem; 
     display: flex;
     flex-direction: column;
-
+ gap: 8.5rem;
 }
 
 h1 {
-font-size: 2.5rem;
+font-size: 2.5rem;}
+ 
+.video iframe{
 
+ aspect-ratio: 16/9;
 
 }
 
+.home,
+ .projeto, 
+ .sobre,
+.contato {
+padding: 5rem 4rem 2rem 4rem;
+    }
 
+ .descricao-video {
+display: flex;
+background-color: rgb(52, 46, 68);
+padding: 10rem 10rem 5rem;
+align-items: center;
+justify-content: flex-start;
+margin-top: 5.5rem;
+ }
+ 
+.descricao-video h2 {
+font-style: 2rem;
+text-transform: uppercase;
+    margin-top: -2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*letter-spacing: ;*/
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projetos-container 
+
+ 
 
 .main-content {
 
@@ -191,7 +226,9 @@ font-size: 2.5rem;
     gap: 2.5rem;
 }
 /* Medidas Responsivas */
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
+
+
 
     .menu-desktop {
         display: flex;
@@ -207,7 +244,9 @@ h1 {
     font: 3rem;
  }
 
- #home{
+ #home
+ .projeto,
+ .sobre {
     padding: 8re 6rem 4rem 6rem ;
  }  
 
@@ -231,4 +270,13 @@ h1 {
 
     font-size: 3rem ;
  }
+
+.decricao-video,
+.projeto, 
+.sobre {
+
+    padding: 10rem 15rem 4rem;
+}
+
  }
+  
