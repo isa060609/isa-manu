@@ -9,48 +9,51 @@
     --menu-link: #ad9ffc;
 
 
-    --cor-borda:rgb(89, 77, 112);
-    
+    --cor-borda: rgb(29, 20, 71);
+
 }
 
 :root[data-theme='light'] {
-    --cor-fundo: #cecece;
-    --cor-texto: #1b1b1b;
-    --menu-link: #491a68;
- 
+    --cor-fundo: #9ab0c9;
+    --cor-texto: #35547c;
+    --menu-link: #454147;
+
 }
 
 
 /*Inverter color logo*/
-html[data-theme='light'] .logo{
-filter: invert(1);
+html[data-theme='light'] .logo {
+    filter: invert(1);
 
 }
 
 
 /* Reset CSS= padronizar*/
 
-*{
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 
 
 }
 
 body {
-    background: var(--cor-fundo); /* cor fundo */
-    color: var(--cor-texto); /* cor TEXTOS */
+    background: var(--cor-fundo);
+    /* cor fundo */
+    color: var(--cor-texto);
+    /* cor TEXTOS */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-   color: var(--menu-link);
-   text-decoration: none;
+    color: var(--menu-link);
+    text-decoration: none;
 }
 
 ul {
-    list-style: none;  /* Estilo de Lista */
+    list-style: none;
+    /* Estilo de Lista */
 }
 
 header {
@@ -60,9 +63,9 @@ header {
     width: 100%;
     background: var(--cor-fundo);
     border-bottom: 5px solid var(--cor-borda);
-    position:fixed /*volta*/; 
-    Z-index: 9999 /*camadas*/ 
-
+    position: fixed; /*volta*/
+    z-index: 9999; /*camadas*/
+    padding: .5rem 1rem;
 }
 
 .menu-desktop {
@@ -73,14 +76,16 @@ header {
 }
 
 /* NAV = UL // OL */
-.menu  {
-    display: flex; /* em linha // horizontal */
-    gap: 1rem; /* 16px */
+.menu {
+    display: flex;
+    /* em linha // horizontal */
+    gap: 1rem;
+    /* 16px */
     align-items: center;
 }
 
 /* LI = listas */
-.menu-item { 
+.menu-item {
     width: 100%;
 }
 
@@ -108,25 +113,28 @@ botao menu mobile  ----- */
     cursor: pointer;
     color: var(--cor-texto);
     display: flex;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
-}	
+    padding: 10rem;
+}
 
-.menu-mobile {  /* NAV */
+.menu-mobile {
+    /* NAV */
     position: fixed;
     top: 0;
     right: 0;
     background: var(--cor-fundo);
     width: 75%;
-    height: 100vh; /* viewPort Altura */
+    height: 100vh;
+    /* viewPort Altura */
     border-left: 1px solid var(--cor-borda);
     max-width: 320px;
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
-    transition: .3s ease-in-out; /* voltar aqui */
+    transition: .3s ease-in-out;
+    /* voltar aqui */
     transform: translateX(100%);
 }
 
@@ -135,22 +143,27 @@ botao menu mobile  ----- */
     transform: translateX(0%);
 }
 
-.menu-mobile /* nav */
-.menu-list  /* UL */ {  
+.menu-mobile
+/* nav */
+.menu-list
+
+/* UL */
+    {
     display: flex;
-    flex-direction: column; /* EIXO Y = Vertical */
+    flex-direction: column;
+    /* EIXO Y = Vertical */
     gap: 1rem;
     width: 100%;
     padding: 1rem 1rem 2rem;
 }
 
-.menu-mobile .menu-item  {
+.menu-mobile .menu-item {
     width: 100%;
     text-align: center;
 }
 
 .menu-mobile .menu-link {
-    padding: 0.5rem 0;
+    padding: 20rem 10;
     display: inline-block;
     font-size: 1rem;
 }
@@ -158,125 +171,150 @@ botao menu mobile  ----- */
 
 .logo {
 
-width: 4. 10rem ; /*comprimento*/ 
-height: 5.70rem ; /*altura*/  
+    width: 4. 10rem;
+    /*comprimento*/
+    height: 5.70rem;
+    /*altura*/
 
 }
 
-.header-toggle{
-display: flex; 
-justify-content: flex-end;
-align-items: center;
-}  
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 #home {
-    padding: 6.5rem 1rem; 
+    padding: 9rem 1rem;
     display: flex;
     flex-direction: column;
- gap: 8.5rem;
+    gap: 3.5rem;
 }
 
 h1 {
-font-size: 2.5rem;}
- 
-.video iframe{
+    font-size: 2.5rem;
+}
 
- aspect-ratio: 16/9;
+.video iframe {
+
+    aspect-ratio: 16/9;
 
 }
 
-.home,
- .projeto, 
- .sobre,
-.contato {
-padding: 5rem 4rem 2rem 4rem;
-    }
+#home,
+.projetos {
+    padding: 5rem 4rem 2rem 4rem;
+}
 
- .descricao-video {
-display: flex;
-background-color: rgb(52, 46, 68);
-padding: 10rem 10rem 5rem;
-align-items: center;
-justify-content: flex-start;
-margin-top: 5.5rem;
- }
- 
+.descricao-video {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 7rem 7rem 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0rem;
+}
+
 .descricao-video h2 {
-font-style: 2rem;
-text-transform: uppercase;
+    font-style: 10rem;
+    text-transform: uppercase;
     margin-top: -2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*letter-spacing: ;*/
 }
 
-.projeto{
+.projetos {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.projetos-container 
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
- 
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+    
+}
 
 .main-content {
-
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
+
 /* Medidas Responsivas */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 
 
     .menu-desktop {
         display: flex;
-        min-width: 30%; /*Alinhar logo*/
+        min-width: 40%;
+        /*Alinhar logo*/
     }
 
-    .header {  padding: 9rem 6rem;
-    
-}
+    header {
+        padding: 1rem 4rem;
+    }
 
-h1 {
+    h1 {
 
-    font: 3rem;
- }
+        font: 5rem;
+    }
 
- #home
- .projeto,
- .sobre {
-    padding: 8re 6rem 4rem 6rem ;
- }  
+    #home,
+    .projetos {
+        padding: 8rem 6rem 4rem 6rem;
+    }
 
- .main-content{ 
+    .main-content {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
- }
     .btn-menu-mobile {
         display: none;
     }
+
     .header-toggle {
         min-width: 30%;
     }
-}/*FIM min 768px*/
+}
 
-@media (min-width: 1400px )  {
+/*FIM min 768px*/
 
- h1 { 
+@media (min-width:992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+    .img-card {
+        width: 50%;
+    }
+    
+}
 
-    font-size: 3rem ;
- }
+@media (min-width: 1400px) {}
+
+h1 {
+
+    font-size: 3rem;
+}
 
 .decricao-video,
-.projeto, 
-.sobre {
+.projetos {
 
     padding: 10rem 15rem 4rem;
 }
-
- }
-  
