@@ -1,5 +1,10 @@
 /* CSS Externo */
 
+/* Google Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quintessential&display=swap');
+
+
 /* Definir as cores Tema Dark */
 /* raiz */
 :root,
@@ -38,12 +43,21 @@ html[data-theme='light'] .logo {
 
 }
 
+/*sualizar o efeito de rolagem*/
+
+html {
+
+    scroll-behavior: smooth;
+
+
+}
+
 body {
     background: var(--cor-fundo);
     /* cor fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Cinzel Decorative", serif;
 }
 
 a {
@@ -63,8 +77,10 @@ header {
     width: 100%;
     background: var(--cor-fundo);
     border-bottom: 5px solid var(--cor-borda);
-    position: fixed; /*volta*/
-    z-index: 9999; /*camadas*/
+    position: fixed;
+    /*volta*/
+    z-index: 9999;
+    /*camadas*/
     padding: .5rem 1rem;
 }
 
@@ -116,7 +132,7 @@ botao menu mobile  ----- */
     font-size: 2.8rem;
     align-items: center;
     justify-content: center;
-    padding: 10rem;
+    padding: 1rem;
 }
 
 .menu-mobile {
@@ -163,7 +179,7 @@ botao menu mobile  ----- */
 }
 
 .menu-mobile .menu-link {
-    padding: 20rem 10;
+    padding: 2rem 1rem;
     display: inline-block;
     font-size: 1rem;
 }
@@ -171,9 +187,9 @@ botao menu mobile  ----- */
 
 .logo {
 
-    width: 4. 10rem;
+    width: 5rem;
     /*comprimento*/
-    height: 5.70rem;
+    /* height: 5.70rem; */
     /*altura*/
 
 }
@@ -193,6 +209,23 @@ botao menu mobile  ----- */
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Cinzel Decorative", serif;
+}
+
+h2 {
+    font-family: "Euphoria Script", cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+h3 {
+    font-size: 1.55rem;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
 }
 
 .video iframe {
@@ -219,7 +252,7 @@ h1 {
     font-style: 10rem;
     text-transform: uppercase;
     margin-top: -2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Carattere", cursive;
     /*letter-spacing: ;*/
 }
 
@@ -244,8 +277,38 @@ h1 {
 .img-card {
     width: 100%;
     border-radius: .5rem;
-    
+
 }
+
+.card-body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 1rem;
+}
+
+.card-item {
+
+    color: ;
+    /*cor do texto*/
+    font-size: 1rem;
+    /* tamanho do texto*/
+    font-weight: 7rem;
+    /* largura das letras*/
+    font-family: "Carattere", cursive;
+    /* estilo das fontes*/
+}
+
+.card-titulo {
+    color: aqua;
+}
+
+.card-descricao {
+    color: orange;
+}
+
 
 .main-content {
     display: flex;
@@ -254,9 +317,19 @@ h1 {
 }
 
 /* Medidas Responsivas */
+
+@media(max-width:768px) {
+    #home {
+        padding-top: 8rem;
+    }
+}
+
+
 @media (min-width: 768px) {
 
-
+    #home {
+        padding: 0%;
+    }
 
     .menu-desktop {
         display: flex;
@@ -271,6 +344,17 @@ h1 {
     h1 {
 
         font: 5rem;
+    }
+
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+
+
     }
 
     #home,
@@ -300,17 +384,44 @@ h1 {
     .projeto-card {
         flex-direction: row;
     }
+
     .img-card {
         width: 50%;
     }
-    
+
+    .reverse-card {
+        /*espelhar*/
+        flex-direction: row-reverse;
+    }
+
 }
+
+@media (min-width: 1200px) {
+
+    h2 {
+        font-size: 4rem;
+        color: #ad9ffc;
+    }
+
+
+
+}
+
 
 @media (min-width: 1400px) {}
 
 h1 {
 
     font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+
+    font-size: 2.25rem;
 }
 
 .decricao-video,
