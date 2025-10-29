@@ -10,11 +10,14 @@
 :root,
 :root[data-theme='dark'] {
     --cor-fundo: #1b1b1b;
-    --cor-texto: #ad9ffc;
+    --cor-texto: #383063;
     --menu-link: #ad9ffc;
 
 
     --cor-borda: rgb(29, 20, 71);
+
+
+   --cor-hover-icone:#631d1d;
 
 }
 
@@ -210,10 +213,11 @@ botao menu mobile  ----- */
 h1 {
     font-size: 2.5rem;
     font-family: "Cinzel Decorative", serif;
+    
 }
 
 h2 {
-    font-family: "Euphoria Script", cursive;
+    font-family: "Bilbo Swash Caps", cursive;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
@@ -252,7 +256,8 @@ h3 {
     font-style: 10rem;
     text-transform: uppercase;
     margin-top: -2rem;
-    font-family: "Carattere", cursive;
+    font-family:"Cinzel Decorative", serif;
+    
     /*letter-spacing: ;*/
 }
 
@@ -297,16 +302,29 @@ h3 {
     /* tamanho do texto*/
     font-weight: 7rem;
     /* largura das letras*/
-    font-family: "Carattere", cursive;
+  font-family: "Croissant One", serif;
     /* estilo das fontes*/
 }
 
 .card-titulo {
-    color: aqua;
+    /*cor do texto*/
+    font-size: 1rem;
+    /* tamanho do texto*/
+    font-weight: 7rem;
+    /* largura das letras*/
+    font-family: "Bilbo Swash Caps", cursive;
+    /* estilo das fontes*/
 }
 
+
 .card-descricao {
-    color: orange;
+  /*cor do texto*/
+    font-size: 1rem;
+    /* tamanho do texto*/
+    font-weight: 7rem;
+    /* largura das letras*/
+     font-family: "Bilbo Swash Caps", cursive;
+    /* estilo das fontes*/
 }
 
 
@@ -314,6 +332,36 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+
+.redes-sociais .menu-link:hover i {
+  transform: scale(1.2); /* cresce um pouquinho no hover */
+}
+
+/* 🎩 GitHub */
+.bi-github:hover {
+  color: #333; /* cinza escuro característico do GitHub */
+}
+
+/* 📸 Instagram */
+.bi-instagram:hover {
+  color: #E1306C; /* rosa do Instagram */
+}
+
+/* 💬 WhatsApp */
+.bi-whatsapp:hover {
+  color: #25D366; /* verde do WhatsApp */
+}
+
+
+
+.col6{
+color: #25D366;
+}
+
+.col5{
+color: #E1306C;
 }
 
 /* Medidas Responsivas */
@@ -400,7 +448,7 @@ h3 {
 
     h2 {
         font-size: 4rem;
-        color: #ad9ffc;
+        
     }
 
 
@@ -428,4 +476,22 @@ h3 {
 .projetos {
 
     padding: 10rem 15rem 4rem;
+}
+
+
+.card-item i
+{ margin-right: 8px;}
+
+
+.card-item i:hover{
+    color: var(--cor-hover-icone);
+    transition: 0.3 ease-in-out;
+}
+
+
+
+
+.bi {
+  color: #705f7c; /* cor definitiva que você quiser */
+  font-size: 18px; /* opcional, para ajustar o tamanho */
 }
